@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML forms</title>
+    <link rel="stylesheet" href="./public/css/styles.css" />
+    <link rel="icon" href="https://avatars.githubusercontent.com/u/96913755?v=4" type="image/x-icon"/>
+    <script src="https://kit.fontawesome.com/f3220d5256.js" crossorigin="anonymous"></script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2604597246009301"
+    crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="email-bg hide">
+        <div class="email-card hide down">
+            <div class="email-head">
+                <p>
+                    Receiver's address
+                </p>
+                <span class="close">
+                    &times;
+                </span>
+            </div>
+            <div class="cnt">
+                <span class="user" id="user">
+                    <p>
+                        All done! now fill up the receivers email address below
+                    </p>
+                </span>
+                <div class="input">
+                    <label for="email-reciever">
+                        Reciever's Email:
+                    </label>
+                    <input type="email" id="email-reciever" name="Reciever's email" class="receiver-email-input" placeholder="Enter receivers email here..." required/> 
+                </div>
+                <button class="submit none">
+                    Send
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="forms">
+        <div class="forms-head">
+            <p>
+                Html Forms
+            </p>
+        </div>
+        <div class="bg">
+            <p class="info">
+                Send mail to someone@example.com
+            </p>
+            <form action="" class="form" id="form" method="post">
+                <div class="input">
+                    <label for="name">
+                        Name:
+                    </label>
+                    <input type="text" autocomplete="username" id="name" name="Name" placeholder="Enter your name here..." required/>
+                </div>
+                <div class="input">
+                    <label for="email">
+                        E-mail:
+                    </label>
+                    <input type="email" autocomplete="email" id="email" name="E-mail" placeholder="Enter your email here..." required/>
+                </div>
+                <div class="input">
+                    <label for="query">
+                        Query:
+                    </label>
+                    <textarea name="Query" id="query" placeholder="Enter your query here..." required></textarea>
+                </div>
+                <div class="btns">
+                    <button type="menu" class="send none">
+                        Submit
+                    </button>
+                    <button type="reset" class="reset none">
+                        Reset
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script defer src="./public/js/ui.js"></script>
+    <script defer src="./public/js/script.js"></script>
+</body>
+</html>

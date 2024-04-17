@@ -1,0 +1,308 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+:root{
+    --ff: "Poppins",sans-serif;
+    --main-gardient:linear-gradient(90deg,rgb(1, 207, 94),74%,rgb(0, 183, 255));
+}
+*,
+*::after,
+*::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+input,button,textarea,select,div{
+    outline: none;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+li{
+    list-style: none;
+}
+body{
+    font-family: var(--ff);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    background: var(--main-gardient);
+}
+.forms{
+    width: 350px;
+    background: rgba(30,30,30);
+    color: #fff;
+    border-radius: .3rem;
+    box-shadow:  0 10px 20px 0 rgba(0,0,0,.6);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.forms-head{
+    user-select: none;
+    padding: .3rem .5rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3rem;
+}
+.forms-head p{
+    background: var(--main-gardient);
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+.bg{
+    width: 100%;
+    height: 100%;
+    padding: .2rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.bg form{
+    width: 100%;
+    height: 100%;
+    padding: .2rem;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    flex-direction: column;
+}
+.input{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.input label{
+    width: 100%;
+    background: #2a2d2e;
+    user-select: none;
+    padding: .3rem .5rem;
+    font-size: 1.13rem;
+    border-top-left-radius: .3rem;
+    border-top-right-radius: .3rem;
+}
+.input input{
+    width: 100%;
+    padding: .5rem 1rem;
+    font-size: 1.1rem;
+    border: none;
+    background: #3d4142;
+    color: #fff;
+    border-bottom-left-radius: .3rem;
+    border-bottom-right-radius: .3rem;
+}
+.input textarea{
+    resize: none;
+    width: 100%;
+    padding: .3rem .5rem;
+    font-size: 1.1rem;
+    border: none;
+    background: #3d4142;
+    color: #fff;
+    border-bottom-left-radius: .3rem;
+    border-bottom-right-radius: .3rem;
+    font-family: var(--ff);
+    height: 170px;
+}
+.input textarea::-webkit-scrollbar{
+    background: transparent;
+    scroll-behavior: smooth;
+    width: 15px;
+}
+.input textarea::-webkit-scrollbar-thumb{
+    background: hsl(270, 3%, 39%);
+    border-radius: .5rem;
+}
+.input textarea::-webkit-scrollbar-thumb:hover{
+    background: hsl(270, 3%, 49%);
+}
+.input textarea::-webkit-scrollbar-thumb:active{
+    background: hsl(270, 3%, 59%);
+}
+.btns{
+    user-select: none;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    justify-content: space-between;
+}
+.send,.reset{
+    cursor: pointer;
+    padding: .5rem 1rem;
+    font-size: 1.14rem;
+    border-radius: .3rem;
+    transition: all .1s ease-in-out;
+    border: transparent;
+    width: 50%;
+}
+.send{
+    background: rgb(7, 224, 80);
+}
+.send:hover{
+    background: hsl(140, 94%, 35%);
+}
+.reset{
+    background: rgb(247, 71, 71);
+}
+.reset:hover{
+    background: hsl(0, 92%, 52%);
+}
+.info{
+    width: 100%;
+    text-align: center;
+    padding: .3rem .5rem;
+    word-spacing: 1px;
+    letter-spacing: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: rgb(7, 224, 80);
+    margin-bottom: .3rem;
+}
+.email-bg{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    z-index: 4;
+    background: rgba(0,0,0,.6);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transition: all .5s ease-in-out;
+}
+.email-card{
+    width: 300px;
+    display: flex;
+    border-radius: .3rem;
+    overflow: hidden;
+    align-items: center;
+    flex-direction: column;
+    background: #222324;
+    box-shadow: 0 10px 20px 0 rgba(0,0,0,.6);
+    transition: all .5s ease-in-out;
+}
+.email-head{
+    background: #2a2d2e;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: .3rem .5rem;
+    user-select: none;
+    font-size: 1.13rem;
+}
+.email-head .close{
+    font-size: 2rem;
+    height: 100%;
+    width: 50px;
+    border-radius: .3rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transition: all .1s ease-in-out;
+}
+.close:hover{
+    background: #3d4142;
+}
+.cnt{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: .5rem 1rem;
+    
+}
+.user{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: .5rem 1rem;
+    margin-bottom: .5rem;
+}
+.user p{
+    border-radius: .3rem;
+    padding: .2rem .5rem;
+    color: rgb(1, 207, 94);
+    border: 2px dashed ; 
+    text-align: center;
+}
+.submit{
+    user-select: none;
+    margin-top: .5rem;
+    cursor: pointer;
+    padding: .5rem 1rem;
+    font-size: 1.14rem;
+    border-radius: .3rem;
+    transition: all .1s ease-in-out;
+    border: transparent;
+    width: 100%;
+    background: rgb(7, 224, 80);
+}
+.submit:hover{
+    background: hsl(140, 94%, 35%);
+}
+.none{
+    opacity: .55;
+    pointer-events: none;
+}
+.bottom{
+    bottom: -100%;
+}
+.down{
+    transform: translateY(-100%);
+}
+.up{
+    transform: translateY(100%);
+}
+.hide{
+    pointer-events: none;
+    opacity: 0;
+    visibility: hidden;
+}
+.ani{
+    animation: pop 1s ease-in-out;
+}
+.anti{
+    animation: anti-pop 1s ease-in-out;
+}
+@keyframes pop {
+    from{
+        scale: 0;
+    }
+    to{
+        scale: 1;
+    }
+}
+@keyframes anti-pop {
+    from{
+        scale: 1;
+    }
+    to{
+        scale: 0;
+    }
+}
+
+@media (max-width: 350px) {
+    .forms{
+        width: 93%;
+    }
+}
+@media (max-width: 300px) {
+    .email-card{
+        width: 90%;
+    }
+}
